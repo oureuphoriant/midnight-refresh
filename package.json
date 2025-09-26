@@ -1,0 +1,27 @@
+{
+  "name": "@jademathre/midnight-refresh",
+  "version": "1.0.0",
+  "description": "Utility to refresh page at midnight",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "refresh",
+    "midnight",
+    "timer",
+    "browser"
+  ],
+  "author": "Jade Mathre",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "README.md"
+  ]
+}
