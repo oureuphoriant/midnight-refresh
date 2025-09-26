@@ -2,11 +2,13 @@
   "name": "@jademathre/midnight-refresh",
   "version": "1.0.0",
   "description": "Utility to refresh page at midnight",
-  "main": "index.js",
-  "types": "index.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
   "scripts": {
     "build": "tsc",
-    "prepublishOnly": "npm run build"
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run clean && npm run build"
   },
   "keywords": [
     "refresh",
@@ -20,8 +22,7 @@
     "typescript": "^5.0.0"
   },
   "files": [
-    "index.js",
-    "index.d.ts",
+    "dist/**/*",
     "README.md"
   ]
 }
